@@ -336,9 +336,9 @@ main h2 {
 }
 .feature .poster {
   width: 150px;
-  aspect-ratio: 1;
+  aspect-ratio: 2 / 3;
   flex: none;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #111;
@@ -347,8 +347,17 @@ main h2 {
 }
 .feature:hover .poster { transform: translateY(-6px); }
 .feature .song { display: flex; flex-direction: column; gap: 0.3rem; }
+.feature .song { width: 100%; min-width: 0; }
 .feature .song strong { font-size: 1.1rem; }
-.feature .song span { font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.1em; }
+.feature .song span {
+  max-width: 100%;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  overflow-wrap: anywhere;
+}
 
 /* center everything in the music section, including the bottom rows */
 .cd-groups { margin: 0 auto; }
@@ -370,6 +379,16 @@ main h2 {
 .cd-bin .cd { flex: none; width: 200px; }
 .cd-bin.feature-row { gap: 2.5rem 4rem; }
 .feature { flex: none; width: 240px; }
+.cd-bin.feature-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2.5rem 1rem;
+}
+.feature-row .feature { width: 100%; min-width: 0; }
+
+@media (max-width: 800px) {
+  .cd-bin.feature-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 
 /* section titles share the PARAMORE title font */
 main h2, .cd-groups h3 { font-family: "Scribble Gothic", "Helvetica Neue", Arial, sans-serif; font-weight: 400; }
@@ -863,7 +882,7 @@ main h2 { padding-top: 0.2em; }
   mix-blend-mode: screen;
   pointer-events: none;
 }
-#music .music-speakers {
+#music .music-rings {
   top: 1%;
   left: -10%;
   width: clamp(420px, 58vw, 820px);
@@ -894,7 +913,7 @@ main h2 { padding-top: 0.2em; }
 #music h2, #music .cd-groups { position: relative; z-index: 2; }
 
 @media (max-width: 600px) {
-  #music .music-speakers { top: 3%; right: -40%; left: auto; width: 420px; }
+  #music .music-rings { top: 3%; right: -40%; left: auto; width: 420px; }
   #music .music-ornamental { top: 28%; right: auto; left: -45%; width: 500px; opacity: 0.13; }
   #music .music-splatter-a { top: 58%; right: -42%; left: auto; width: 400px; }
   #music .music-splatter-b { right: auto; bottom: 1%; left: -38%; width: 370px; }

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 800">
+  <g fill="#000">
+    <circle cx="354" cy="180" r="177"/>
+    <circle cx="154" cy="434" r="69"/>
+    <circle cx="54" cy="440" r="36"/>
+    <circle cx="307" cy="480" r="105"/>
+    <circle cx="148" cy="566" r="79"/>
+    <circle cx="245" cy="605" r="29"/>
+    <circle cx="346" cy="699" r="91"/>
+    <circle cx="170" cy="171" r="15"/>
+    <circle cx="282" cy="598" r="8"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="354" cy="180" r="147"/>
+    <circle cx="154" cy="434" r="60"/>
+    <circle cx="54" cy="440" r="28"/>
+    <circle cx="307" cy="480" r="85"/>
+    <circle cx="148" cy="566" r="61"/>
+    <circle cx="245" cy="605" r="22"/>
+    <circle cx="346" cy="699" r="73"/>
+    <circle cx="170" cy="171" r="8"/>
+    <circle cx="282" cy="598" r="4"/>
+    <circle cx="354" cy="180" r="100"/>
+    <circle cx="307" cy="480" r="62"/>
+    <circle cx="148" cy="566" r="43"/>
+    <circle cx="346" cy="699" r="48"/>
+    <circle cx="54" cy="440" r="20"/>
+  </g>
+  <g fill="#000">
+    <circle cx="354" cy="180" r="82"/>
+    <circle cx="307" cy="480" r="48"/>
+    <circle cx="148" cy="566" r="29"/>
+    <circle cx="346" cy="699" r="30"/>
+    <circle cx="54" cy="440" r="14"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="354" cy="180" r="43"/>
+    <circle cx="307" cy="480" r="29"/>
+    <circle cx="148" cy="566" r="13"/>
+    <circle cx="346" cy="699" r="17"/>
+    <circle cx="54" cy="440" r="8"/>
+    <circle cx="245" cy="605" r="14"/>
+  </g>
+  <g fill="#000">
+    <circle cx="54" cy="440" r="5"/>
+    <circle cx="245" cy="605" r="9"/>
+  </g>
+</svg>
